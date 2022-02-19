@@ -5,7 +5,7 @@ body {
 div.header-box:before { 
     content:"";
     position:absolute;
-    background: rgb(108, 88, 76);
+    background: rgb(113, 86, 74);
     border-radius: 15px;
     top:0;
     left:0;

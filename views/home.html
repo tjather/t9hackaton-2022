@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <title>Sustain</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../resources/css/menu.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link href="../resources/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page-container">
+    <nav class="nav nav--collapsed">
+      <div class="nav__border"></div>
+      <a href="home.html" class="nav__link">
+        <div class="nav__icon-container">
+          <i class="material-icons">home</i>
+        </div>
+        <span class="nav__label">Home</span>
+      </a>
+
+      <a href="homegoods.html" class="nav__link">
+        <div class="nav__icon-container">
+          <i class="material-icons">checkroom</i>
+        </div>
+        <span class="nav__label">Homegoods</span>
+      </a>
+
+      <a href="beauty.html" class="nav__link">
+        <div class="nav__icon-container">
+          <i class="material-icons">account_balance</i>
+        </div>
+        <span class="nav__label">Beauty</span>
+      </a>
+      
+      <a href="clothing.html" class="nav__link">
+        <div class="nav__icon-container">
+          <i class="material-icons">analytics</i>
+        </div>
+        <span class="nav__label">Clothing</span>
+      </a>
+      </a>
+      <a href="businesses.html" class="nav__link">
+        <div class="nav__icon-container">
+          <i class="material-icons">scatter_plot</i>
+        </div>
+        <span class="nav__label">Businesses</span>
+      </a>
+    </nav>
+    <main class="main">
+    </main>
+    <div class="container">
+      <br />
+      <div class="row justify-content-md-center">
+        <div class="col-lg-12">
+          <div class="header-box" style="padding: 100px;">
+            <center>
+              <h1 class="display-4" style="color:rgb(215, 189, 161);">
+                Sustain
+              </h1>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="container p-1">
+        <div class="row justify-content-md-center p-2">
+          <div class="col-lg-5 p-3">
+            <button type="button" class="btn btn-block button-options" style="padding: 100px;">
+              <span class="align-middle heading-names" style="color:rgb(108, 88, 76);">Beauty</span>
+            </button>
+          </div>
+          <div class="col-lg-5 p-3">
+            <button type="button" class="btn btn-block button-options" style="padding: 100px;">
+              <span class="align-middle heading-names" style="color:rgb(108, 88, 76);">Homegoods</span>
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-md-center p-1">
+          <div class="col-lg-5 p-3">
+            <button type="button" class="btn btn-block button-options" style="padding: 100px;">
+              <span class="align-middle heading-names" style="color:rgb(108, 88, 76);">Clothing</span>
+            </button>
+          </div>
+          <div class="col-lg-5 p-3">
+            <button type="button" class="btn btn-block button-options" style="padding: 100px;">
+              <span class="align-middle heading-names" style="color:rgb(108, 88, 76);">Businesses</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <script>
+    {
+      const collapsedClass = "nav--collapsed";
+      const lsKey = "navCollapsed";
+      const nav = document.querySelector(".nav");
+      const navBorder = nav.querySelector(".nav__border");
+      if (localStorage.getItem(lsKey) === "true") {
+        nav.classList.add(collapsedClass);
+      }
+      navBorder.addEventListener("click", () => {
+        nav.classList.toggle(collapsedClass);
+        localStorage.setItem(lsKey, nav.classList.contains(collapsedClass));
+      });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

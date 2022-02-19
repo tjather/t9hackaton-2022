@@ -1,6 +1,10 @@
 body {
     background-color: #faebd2;
 }
+@font-face {
+    font-family: radley;
+    src: url(./Radley-Regular.ttf) format("truetype");
+  }
 
 div.header-box:before { 
     content:"";

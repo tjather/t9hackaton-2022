@@ -1,3 +1,7 @@
+body {
+    background-color: #faebd2;
+}
+
 div.header-box:before { 
     content:"";
     position:absolute;

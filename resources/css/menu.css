@@ -17,6 +17,8 @@
   
   .main {
     height: inherit;
+    width: 100%;
+    width: 100vw;
     padding: 0;
     padding-left: var(--nav-border-width);
     overflow-y: auto;
@@ -47,7 +49,7 @@
   }
   
   .nav__link:hover {
-    background-color: rgb(108, 88, 76);
+    background-color: #dddddd;
   }
   
   .nav__icon-container {
